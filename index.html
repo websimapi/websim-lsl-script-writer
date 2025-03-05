@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSL Script Writer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>LSL Script Writer</h1>
+            <p>Create and learn Linden Scripting Language (LSL) for Second Life</p>
+        </header>
+        
+        <div class="editor-container">
+            <div class="sidebar">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search functions, events...">
+                </div>
+                <div class="categories">
+                    <h3>Categories</h3>
+                    <ul id="categoryList">
+                        <li data-category="functions">Functions</li>
+                        <li data-category="events">Events</li>
+                        <li data-category="types">Data Types</li>
+                        <li data-category="constants">Constants</li>
+                        <li data-category="operators">Operators</li>
+                        <li data-category="flow">Flow Control</li>
+                    </ul>
+                </div>
+                <div class="function-list">
+                    <h3>Reference</h3>
+                    <div id="referenceList" class="scrollable-list"></div>
+                </div>
+            </div>
+            
+            <div class="editor">
+                <div class="editor-controls">
+                    <button id="newScript">New Script</button>
+                    <button id="saveScript">Save Script</button>
+                    <button id="copyScript">Copy to Clipboard</button>
+                </div>
+                <div class="editor-wrapper">
+                    <textarea id="scriptEditor" spellcheck="false"></textarea>
+                    <div id="lineNumbers"></div>
+                </div>
+            </div>
+            
+            <div class="documentation">
+                <h3>Documentation</h3>
+                <div id="documentationContent" class="scrollable-content">
+                    <p>Select a function, event, or category from the sidebar to see documentation.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="templates">
+            <h3>Common Script Templates</h3>
+            <div class="template-buttons">
+                <button data-template="basic">Basic Script</button>
+                <button data-template="touch">Simple Touch</button>
+                <button data-template="dialog">Dialog Menu</button>
+                <button data-template="sensor">Sensor Script</button>
+                <button data-template="animation">Animation Controller</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>This tool is designed to help create and learn LSL (Linden Scripting Language) for Second Life.</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"4c6229722a6346bc8eb5cb0e5eae5d41","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
